@@ -1,0 +1,47 @@
+project/
+│
+├── app/
+│   │
+│   ├── main.py                # entry point
+│   │
+│   ├── core/
+│   │   ├── config.py          # settings, env vars
+│   │   └── security.py        # auth, hashing, etc.
+│   │
+│   ├── db/
+│   │   ├── base.py            # Base = declarative_base()
+│   │   ├── session.py         # engine + SessionLocal
+│   │   └── init_db.py         # DB initialization
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py            # User model
+│   │   ├── product.py         # Product model
+│   │   └── order.py           # Order model
+│   │
+│   ├── schemas/               # Pydantic (if using FastAPI)
+│   │   ├── user.py
+│   │   └── product.py
+│   │
+│   ├── crud/                  # direct DB operations
+│   │   ├── user.py
+│   │   └── product.py
+│   │
+│   ├── services/              # business logic
+│   │   ├── payment.py
+│   │   └── analytics.py
+│   │
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── user.py
+│   │   │   └── product.py
+│   │
+│   └── utils/
+│       └── helpers.py
+│
+├── migrations/                # Alembic
+│
+├── tests/
+│
+├── requirements.txt
+└── .env

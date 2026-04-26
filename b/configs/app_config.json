@@ -1,0 +1,7 @@
+{
+    "db": {
+
+        "db_type": "sqlite",
+        "db_path": "data/accounts.db"
+    }
+}
