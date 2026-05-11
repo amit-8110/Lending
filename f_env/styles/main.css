@@ -1,0 +1,7 @@
+.main {
+    background-color: red;
+}
+
+div .main {
+    background-color: yellow;
+}

@@ -1,3 +1,1 @@
-sqlalchemy
-fastapi
-uvicorn
+pip install pwdlib[argon2] # hash
